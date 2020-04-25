@@ -46,8 +46,11 @@ namespace EcommerceDemo
                 Id = 1,
                 DireccionParaLaEntrega = "Calle falsa 123",
                 Fecha = DateTime.Now,
-                NombreParaLaEntrega = "Cosme Fulanito"
+                NombreParaLaEntrega = "Cosme Fulanito",
+                Estado = EstadoPedido.Cancelado
             };
+
+            Console.WriteLine((int)compra.Estado);
 
             DetalleCompra detalleCompraUno = new DetalleCompra()
             {
@@ -84,6 +87,32 @@ namespace EcommerceDemo
             }
 
             DetalleCompra encontrados = compra.ProductosComprados.Find(pc => pc.Producto.Id == 4);
+
+            List<IEntidadDeNegocio> lista = new List<IEntidadDeNegocio>()
+            {
+                new Compra(),
+                new DetalleCompra(),
+                new Producto(),
+                new Compra()
+            };
+
+            List<int> enteros = new List<int>() { 591, 4, 65, 7, 897, 9, -100, -4123, 451, 5746, 123, -5647 };
+            enteros.Sort();
+            foreach(var entero in enteros)
+            {
+                Console.WriteLine(entero);
+            }
+
+            Dictionary<int, Producto> datos = new Dictionary<int, Producto>();
+
+            datos.Add(productoUno.Id, productoUno);
+            datos.Add(productoDos.Id, productoDos);
+            datos.Add(productoTres.Id, productoTres);
+
+            var producto = datos[3];
+
+            //CalculoIva.IVA = 1.99m;
+            Console.WriteLine("300 con iva de " + CalculoIva.IVA + " es " + CalculoIva.AgregarIva(300));
 
             Console.ReadKey();
         }

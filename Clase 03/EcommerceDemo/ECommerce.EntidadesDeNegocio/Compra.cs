@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace ECommerce.EntidadesDeNegocio
 {
-    public class Compra
+    public class Compra: Entidad
     {
-        public int Id { get; set; }
-
         public DateTime Fecha { get; set; }
 
         public string NombreParaLaEntrega { get; set; }
@@ -17,6 +15,8 @@ namespace ECommerce.EntidadesDeNegocio
         public string DireccionParaLaEntrega { get; set; }
 
         public List<DetalleCompra> ProductosComprados { get; set; } = new List<DetalleCompra>();
+
+        public EstadoPedido Estado { get; set; }
 
         public Compra()
         {

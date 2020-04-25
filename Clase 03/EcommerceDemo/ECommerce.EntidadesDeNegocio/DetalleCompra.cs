@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ECommerce.EntidadesDeNegocio
 {
-    public class DetalleCompra
+    public sealed class DetalleCompra : Entidad
     {
         public Producto Producto { get; set; }
 

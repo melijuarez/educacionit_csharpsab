@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace ECommerce.EntidadesDeNegocio
 {
-    public class Producto
+    public class Producto : Entidad
     {
-        public int Id { get; set; }
-
         public string Nombre { get; set; }
 
         public decimal PrecioUnitario { get; set; }
