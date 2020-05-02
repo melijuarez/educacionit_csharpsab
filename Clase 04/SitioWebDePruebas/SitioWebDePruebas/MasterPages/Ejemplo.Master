@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Ejemplo.master.cs" Inherits="SitioWebDePruebas.MasterPages.Ejemplo" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <%--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"/>--%>
+    <script src="../Scripts/jquery-3.0.0.min.js"></script>
+    <script src="../Scripts/popper.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <link rel="Stylesheet" href="../Content/bootstrap.min.css" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <h1>Páginas de ejemplo</h1>
+            <hr />
+            <asp:ContentPlaceHolder ID="placeHolderPrincipal" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            Copyright 2020
+        </div>
+    </form>
+</body>
+</html>
