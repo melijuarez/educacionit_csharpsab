@@ -1,6 +1,8 @@
 ﻿using Ecommerce.EntidadesDeNegocio;
 using System;
+using System.CodeDom;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -24,7 +26,12 @@ namespace Ecommerce.Datos
         //    return ListaDeCategorias;
         //}
 
-        private static string connectionString = "Server=localhost;Database=Northwind;Trusted_Connection=True;";
+        private readonly string connectionString;
+
+        public CategoriasDatos()
+        {
+            connectionString = ConfigurationManager.ConnectionStrings["NorthwindDatabase"].ConnectionString;
+        }
 
         public List<Categoria> TodasLasCategorias()
         {

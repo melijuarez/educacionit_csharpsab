@@ -38,6 +38,14 @@
                     <asp:HyperLink runat="server" CssClass="dropdown-item" NavigateUrl="~/Administracion/Categorias/Default.aspx">Categorias</asp:HyperLink>
                 </div>
               </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Reportes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <asp:HyperLink runat="server" CssClass="dropdown-item" NavigateUrl="~/Reportes/VentaPorCategoria.aspx">Ventas por categoria</asp:HyperLink>
+                    </div>
+                </li>
               <li class="nav-item">
                   <asp:HyperLink runat="server" CssClass="nav-link" NavigateUrl="~/AcercaDe/MiTienda.aspx">Acerca de...</asp:HyperLink>
               </li>

@@ -81,6 +81,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Reportes\VentaPorCategoria.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -239,6 +240,13 @@
       <DependentUpon>Ecommerce.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\VentaPorCategoria.aspx.cs">
+      <DependentUpon>VentaPorCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\VentaPorCategoria.aspx.designer.cs">
+      <DependentUpon>VentaPorCategoria.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage\Ecommerce.Master" />

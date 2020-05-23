@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="CategoriasNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportesNegocio.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ecommerce.Datos\Ecommerce.Datos.csproj">
